@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário Geocoding API</title>
+	<link rel="stylesheet" href="formGeocodingAPI.css" >
+	<script src="formGeocodingAPI.js"></script>
+		
+</head>
+<body>
+
+	<main>
+		<form action="https://maps.googleapis.com/maps/api/geocode/json">
+		
+			<div>
+				<label for="morada">Morada</label>
+				<input id="morada" type="text" name="address" required>
+			</div>
+
+			<div>
+				<input id="getGeo" type='submit' value="Get Geocoding Info">
+			</div>
+
+		</form>
+			
+			   <div id="map" ></div>
+	
+
+		<section>
+			<div>
+				<label>Latitude</label>
+				<strong id="latitude">&nbsp;</strong>
+			</div>
+			<div>
+				<label>Longitude</label>
+				<strong id="longitude">&nbsp;</strong>
+			</div>	
+			<label>Endereço formatado</label>
+			<strong id="endereco">&nbsp;</strong>
+			   
+		</section>
+			<section id="currentConditions">
+		<label> Temperatura</label>
+		<strong id="temperatura">Temperatura</strong>
+	
+		<img id="iconTempo" src="" alt="iconEstadoTempo">
+		<strong id="descricao">Estado do Tempo</strong>
+		
+	</section>
+	</main>
+   <script type:"text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaFV0R38VAlC0EZpUm0MEyyrZjGD6ECGs&callback=initMap&libraries=places"">
+    </script>
+ 
+</body>
+</html>

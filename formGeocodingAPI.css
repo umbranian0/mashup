@@ -1,0 +1,86 @@
+/* formGeocodingAPI.css */
+
+body { font-family: "Lucida Brigth", serif;
+	   font-size:150%;	
+}
+
+form { 
+		width: 500px;
+		float:left;
+		margin-bottom: 2em;
+	 }
+
+main { 
+		width: 1000px;
+		margin: 2em auto;	
+	 }	
+
+main::after {
+			content:" ";
+			display: block;
+			clear: both; 
+		   }
+
+
+section { 
+		  width: 500px;
+		  float:left;
+		  clear:left;
+		}
+
+#map { 
+		  
+	     height: 300px;
+		  width: 380px;
+		  float: right;
+		  margin-Top: 20px;
+		  padding-top:200px;
+		  box-sizing: border-box;
+		  overflow: visible;
+		}
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+   
+
+div { margin-bottom: 1em; }
+
+label { display: block; }
+
+input[type='text'] { 
+						width: 100%; 
+						padding:0.5em;
+						font-size: 1em;
+						box-sizing: border-box;
+				    }
+
+input[type='submit'] { 
+		font-size: 1em;
+		padding: 0.5em 1em;
+		border-radius: 0.25em;
+		cursor:pointer;
+	   }	
+
+strong { 
+		width: 100%; 
+		padding:0.5em;
+		box-sizing: border-box;
+		font-size: 1em;
+		display: block;
+		border: 1px solid #999;
+		margin-bottom: 1em;
+}	
+
+section div { 
+				width:48.5%;
+			}
+
+section div::after {
+					content:" ";
+					display: block;
+					clear: both; 
+				   }
+
+section div:nth-child(1) { float:left; }
+section div:nth-child(2) { float:right; }
+
+
